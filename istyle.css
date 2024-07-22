@@ -1,0 +1,268 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"),
+       url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"),
+       url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"),
+       url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+  background: #f9f3e6;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: url('./look.jpeg') no-repeat center center/cover;
+  color: #fff;
+  padding: 60px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.7rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffab40;
+}
+
+nav h1 a {
+  color: #fb852a;
+  text-decoration: none;
+  font-size: 5.7rem;
+  font-weight: 700;
+}
+
+
+.highlight {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.highlight h1 {
+  font-size: 2.3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about {
+  padding: 40px 0;
+  background-color: hsl(27, 80%, 76%);
+  color: #333;
+}
+
+.about .text {
+  padding: 20px;
+}
+
+.menu {
+  padding: 40px 0;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu .item {
+  width: 24%;
+  margin-bottom: 20px;
+  text-align: center;
+  background: #fff3e6;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.menu .item:hover {
+  transform: scale(1.05);
+  background: #ffe0b2;
+}
+
+.menu .item img {
+  width: 100%;
+  height: auto;
+}
+
+.menu .item h3 {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.price {
+  display: block;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #ff6f61;
+}
+
+.testimony {
+  padding: 40px 0;
+  background-color: #f4a261;
+  border-radius: 10px;
+}
+
+.testimony-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background: #fff3e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.testimonial blockquote {
+  margin: 0;
+  color: #333;
+  font-style: italic;
+}
+
+.testimonial footer {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ff6f61;
+}
+
+.booking {
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-widgets {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-widgets .widget {
+  width: 30%;
+  margin: 0 10px;
+}
+
+.footer-widgets h4 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-widgets ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-widgets ul li {
+  margin-bottom: 10px;
+}
+
+.footer-widgets ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-widgets ul li a:hover {
+  color: #ffab40;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff6f61;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ffab40;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav h1 {
+      margin-bottom: 20px;
+  }
+
+  .menu .item {
+      width: 100%;
+  }
+
+  .footer-widgets {
+      flex-direction: column;
+  }
+
+  .footer-widgets .widget {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
